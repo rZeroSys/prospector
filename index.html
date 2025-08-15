@@ -1,77 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Moved - NYC ODCV Prospector</title>
-    <meta http-equiv="refresh" content="0; url=https://rzerosys.github.io/prospector/">
-    <link rel="canonical" href="https://rzerosys.github.io/prospector/">
+    <meta charset="utf-8">
+    <title>Redirecting to NYC ODCV Prospector...</title>
+    <meta http-equiv="refresh" content="0; URL=https://rzerosys.github.io/prospector2/">
+    <link rel="canonical" href="https://rzerosys.github.io/prospector2/">
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
+            padding: 50px;
+            background: #f5f5f5;
         }
-        .container {
-            max-width: 500px;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
+        .redirect-message {
+            background: white;
+            padding: 40px;
             border-radius: 12px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-        h1 { margin-bottom: 1rem; font-size: 2rem; }
-        p { margin-bottom: 1.5rem; opacity: 0.9; }
-        .redirect-link {
-            display: inline-block;
-            padding: 12px 24px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-        .redirect-link:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
         }
         .spinner {
-            margin: 1rem auto;
-            width: 40px;
-            height: 40px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid white;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #0066cc;
             border-radius: 50%;
+            width: 30px;
+            height: 30px;
             animation: spin 1s linear infinite;
+            margin: 20px auto;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🏢 Site Moved</h1>
-        <p>The NYC ODCV Prospector has moved to a new location.</p>
+    <div class="redirect-message">
+        <h2>Redirecting...</h2>
         <div class="spinner"></div>
-        <p>You will be automatically redirected in a moment...</p>
-        <a href="https://rzerosys.github.io/prospector/" class="redirect-link">
-            Continue to New Site →
-        </a>
+        <p>Taking you to the <a href="https://rzerosys.github.io/prospector2/">NYC ODCV Prospector</a></p>
+        <p><small>If you're not redirected automatically, <a href="https://rzerosys.github.io/prospector2/">click here</a></small></p>
     </div>
+    
     <script>
-        // Fallback redirect after 3 seconds
+        // Backup JavaScript redirect in case meta refresh fails
         setTimeout(function() {
-            window.location.href = 'https://rzerosys.github.io/prospector/';
-        }, 3000);
+            window.location.href = 'https://rzerosys.github.io/prospector2/';
+        }, 1000);
     </script>
 </body>
 </html>
